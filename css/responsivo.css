@@ -1,0 +1,81 @@
+
+@media (max-width: 426px) {
+
+    .destaques__principal, .destaques__categorias{
+        grid-column: 1 / 5;
+    }
+    .destaques__titulo{
+        width: auto;
+    }
+    .populares__conteudo{
+        flex-direction: column;
+    }
+
+    .populares__card{
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }   
+    .rodape{
+        
+        flex-direction: column;
+        align-items: initial;        
+    }
+    .menu-rodape{
+        order: 1;
+        margin: 10px;
+    }
+    .rodapePrincipal-contatoForm{
+        order: 2;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 427px){
+    .populares__conteudo{
+        flex-direction: row;
+    }
+
+    .populares__card{
+        width: calc(50% - 1rem);
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+        grid-template-rows: 173px auto;
+    }   
+    .rodape{
+        
+        flex-direction: column;
+        align-items: center;        
+    }
+    .menu-rodape{
+        order: 1;
+        margin: 20px;
+    }
+    .rodapePrincipal-contatoForm{
+        order: 2;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px){
+    .populares__card{
+        width: calc(33.33% - 1rem);
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+       
+    }   
+    .rodape{
+        
+        flex-direction: column;
+        align-items: center;        
+    }
+    .menu-rodape{
+        order: 1;
+        margin: 20px;
+    }
+    .rodapePrincipal-contatoForm{
+        order: 2;
+        margin: 20px;
+    }
+   
+}
